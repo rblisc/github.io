@@ -117,35 +117,35 @@
         </div>
       </article>
   <!--Contact form-->
-      <article class="row section-article" id="contact">
-        <div class="four columns">
-          <h4 class="section-heading align-left" style="margin-top: 0;">Contact me</h4>
+  <article class="row section-article" id="contact">
+    <div class="four columns">
+      <h4 class="section-heading align-left" style="margin-top: 0;">Contact me</h4>
+    </div>
+    <div class="eight columns">
+      <form id="contactForm" action="https://formspree.io/f/movaayqj" method="POST">
+        <div class="row">
+          <div class="twelve columns">
+            <label for="name">Name</label>
+            <input class="u-full-width" type="text" placeholder="" name="name" required>
+          </div>
+          <div class="twelve columns">
+            <label for="email">Email</label>
+            <input class="u-full-width" type="email" placeholder="" name="email" required>
+          </div>
         </div>
-        <div class="eight columns">
-          <form id="contactForm">
-            <div class="row">
-              <div class="twelve columns">
-                <label for="name">Name</label>
-                <input class="u-full-width" type="text" placeholder="" name="name" required>
-              </div>
-              <div class="twelve columns">
-                <label for="email">Email</label>
-                <input class="u-full-width" type="email" placeholder="" name="email" required>
-              </div>
-            </div>
-            <label for="message" style="display:none">Message</label>
-            <input type="text" name="message" style="display:none" />
-            <label for="real_message">Message</label>
-            <textarea class="u-full-width" placeholder="" name="real_message" required></textarea>
-            <input type="hidden" name="_subject" value="Message from contact form" />
-            <input type="hidden" name="_format" value="plain" />
-            <div class="row">
-              <input class="button four columns" type="submit" value="Send message">
-              <div id="form-response-message" class="eight columns"></div>
-            </div>
-          </form>
+        <label for="message" style="display:none">Message</label>
+        <input type="text" name="message" style="display:none" />
+        <label for="real_message">Message</label>
+        <textarea class="u-full-width" placeholder="" name="real_message" required></textarea>
+        <input type="hidden" name="_subject" value="Message from contact form" />
+        <input type="hidden" name="_format" value="plain" />
+        <div class="row">
+          <input class="button four columns" type="submit" value="Send message">
+          <div id="form-response-message" class="eight columns"></div>
         </div>
-      </article>
+      </form>
+    </div>
+  </article>
     </main>
     <footer id="footer" class="container">
       <hr class="full">
