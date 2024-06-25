@@ -221,45 +221,9 @@ input, textarea {
   background-position: center center;
 }
 
-#canada {
-  background-image: url(../img/canada.png);
-}
-#blackberry {
-  background-image: url(../img/blackberry.png);
-}
-#deloitte {
-  background-image: url(../img/deloitte.png);
-}
-#delego {
-  background-image: url(../img/delego.png);
-}
-#interaptix {
-  background-image: url(../img/interaptix.png);
-}
-
 /* About
 ----------------------------------------------- */
 
 #about {
   /* background: white; */
-}
-
-
-/* Projects
------------------------------------------------ */
-
-.project-list a {
-  margin-right: 2rem;
-}
-.project-list .item{
-  margin: 3rem 0;
-}
-.project-list .item:first-child{
-  margin-top: 0 !important;
-}
-
-.project-list .project-heading {
-  margin: 0;
-  padding: 0;
-  font-weight: bolder !important;
 }
