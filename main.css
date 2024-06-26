@@ -1,69 +1,8 @@
-
-:root {
-  --primary-color: #4A5D23; /* Oak Green */
-  --accent-color: #88CFF9; /* Azzuro Thetys */
-  --highlight-color: #FF6F00; /* Orancio Borealis */
-  --secondary-color: #6F4F28; /* Ipanema Brown */
-  --tertiary-color: #1ED760; /* Verde Ermes */
-}
-
 html,
 body {
-  background: var(--secondary-color); /* Updated background color */
-  height: 100%;
-}
-
-.section-heading {
-  color: var(--primary-color);
-}
-
-a {
-  color: var(--primary-color);
-  border-bottom: 1px solid var(--primary-color);
-}
-
-a:hover {
-  border-bottom: none;
-  color: var(--highlight-color);
-}
-
-hr:not(.full) {
-  border: 1px solid var(--primary-color);
-}
-
-#navbar {
-  background: var(--accent-color);
-}
-
-#footer {
-  background: var(--secondary-color);
-  color: var(--primary-color);
-}
-
-/* Apply accent colors to other elements as needed */
-This update uses your preferred colors to create a cohesive and visually appealing design. You can adjust these colors according to your specific preferences and where you want to apply them on your website.
-
-
-
-
-And how the full updated css would look like?
-ChatGPT
-Here is the full updated CSS incorporating your preferred colors:
-
-css
-Copy code
-/* Updated Colors */
-:root {
-  --primary-color: #4A5D23; /* Oak Green */
-  --accent-color: #88CFF9; /* Azzuro Thetys */
-  --highlight-color: #FF6F00; /* Orancio Borealis */
-  --secondary-color: #6F4F28; /* Ipanema Brown */
-  --tertiary-color: #1ED760; /* Verde Ermes */
-}
-
-html,
-body {
-  background: var(--secondary-color); /* Updated background color */
+  background: #f9f9f8;
+  /* #f9f9f8 */
+  /* background: white; */
   height: 100%;
 }
 
@@ -71,11 +10,15 @@ body {
   max-width: 1200px !important; /* override skeleton.css default 960px */
 }
 
-/* Typography */
+/* Typography
+----------------------------------------------- */
+
 .section-heading {
-  color: var(--primary-color);
+  color: #000;
   margin: 6rem 0 2rem;
   font-weight: bolder !important;
+  /* letter-spacing: .3rem !important; */
+  /* text-transform: uppercase; */
   text-align: center;
 }
 
@@ -89,6 +32,7 @@ body {
 
 .section-article {
   margin: 14rem auto;
+  /* min-height: 50vh; */
 }
 
 .section-desc {
@@ -96,7 +40,7 @@ body {
 }
 
 hr:not(.full) {
-  border: 1px solid var(--primary-color) !important;
+  border: 1px solid #000 !important;
   width: 5rem;
   margin-left: 0;
 }
@@ -118,7 +62,6 @@ ul.dashed > li:before {
 .list-heading {
   font-weight: 550 !important;
 }
-
 .list-heading:not(:first-child) {
   margin-top: 2rem !important;
   margin-bottom: 1rem !important;
@@ -126,16 +69,19 @@ ul.dashed > li:before {
 
 .small-text {
   font-size: smaller !important;
+  /* font-size-adjust: 0.3; */
 }
 
-/* Links */
+/* Links
+----------------------------------------------- */
+
 a {
-  color: var(--primary-color) !important;
+  color: #000 !important;
   text-decoration: none;
 }
 
 a:not(.no-link-style), a:not(.reverse-link-style) {
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom:1px solid #000;
 }
 
 a.no-link-style, a.reverse-link-style {
@@ -144,26 +90,36 @@ a.no-link-style, a.reverse-link-style {
 
 a:hover {
   border-bottom: none !important; 
-  color: var(--highlight-color);
-  transition: .5s;
+  transition:.5s;
 }
 
 a:hover.reverse-link-style {
-  border-bottom: 1px solid var(--primary-color) !important;
-  transition: .5s;
+  border-bottom:1px solid #000 !important;
+  transition:.5s;
 }
 
-/* Layout Utilities */
+/* Layout Utilities
+----------------------------------------------- */
+
 .sticky-top {
   position: sticky;
   top: 0;
   height: 0;
 }
 
-/* Components */
+/* .sticky-bottom {
+  position: sticky;
+  bottom: 0;
+  height: 0;
+} */
+
+/* Components
+----------------------------------------------- */
+
 #navbar {
+  /* padding-top: 2rem;
+  padding-bottom: 2rem; */
   padding: 4rem;
-  background: var(--accent-color);
 }
 
 #navbar #home-link {
@@ -179,6 +135,7 @@ a:hover.reverse-link-style {
 }
 
 #navbar .nav-link {
+  /* pull right */
   margin-left: auto; 
 }
 
@@ -199,7 +156,6 @@ a:hover.reverse-link-style {
 #sidebar {
   margin: 1rem 2rem;
 }
-
 #sidebar ul {
   list-style: none;
 }
@@ -207,8 +163,6 @@ a:hover.reverse-link-style {
 #footer {
   margin-top: 4rem;
   padding-bottom: 4rem;
-  background: var(--secondary-color);
-  color: var(--primary-color);
 }
 
 #footer .fa {
@@ -235,7 +189,9 @@ img.logo {
 
 #big-text {
   align-self: center;
+  /* border: 1px dashed red; */
 }
+
 
 input, textarea {
   /* background: #fee !important; */
@@ -245,7 +201,9 @@ input, textarea {
   /* margin-left: 2rem; */
 }
 
-/* Companies */
+/* Companies
+----------------------------------------------- */
+
 .company-list {
   display: flex;
   justify-content: center;
@@ -257,12 +215,15 @@ input, textarea {
   height: 6rem;
   margin: 1rem 2rem;
   opacity: .8;
+
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-/* About */
+/* About
+----------------------------------------------- */
+
 #about {
-  background: var(--accent-color);
+  /* background: white; */
 }
